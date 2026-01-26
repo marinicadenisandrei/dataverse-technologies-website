@@ -905,6 +905,8 @@ https://templatemo.com/tm-596-electric-xtra
             align-items: center;
             justify-content: center;
             font-size: 1.5rem;
+            line-height: 1;        /* ← KEY FIX */
+            flex: 0 0 50px;        /* ← prevents flex stretching on mobile */
         }
 
         .info-details h4 {

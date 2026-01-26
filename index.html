@@ -3,539 +3,331 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DataVerse Technologies</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600&family=Syne:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="templatemo-nexaverse.css">
-    <!-- 
-    TemplateMo 603 Nexaverse
-    https://templatemo.com/tm-603-nexaverse
-    -->
+    <title>DATAVERSE Technologies - Soluții Software, AI, Integrare & Sisteme IT</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="templatemo-electric-xtra.css" rel="stylesheet">
+<!--
+
+TemplateMo 596 Electric Xtra
+
+https://templatemo.com/tm-596-electric-xtra
+
+-->
 </head>
 <body>
-    <!-- Loading Screen -->
-    <div class="loading-screen" id="loadingScreen">
-        <div class="loader-ring"></div>
-        <div class="loading-text">Initializing Experience...</div>
+    <!-- Animated Grid Background -->
+    <div class="grid-bg"></div>
+    <div class="gradient-overlay"></div>
+    <div class="scanlines"></div>
+
+    <!-- Animated Shapes -->
+    <div class="shapes-container">
+        <div class="shape shape-circle"></div>
+        <div class="shape shape-triangle"></div>
+        <div class="shape shape-square"></div>
     </div>
 
-    <!-- Ambient Background -->
-    <div class="ambient-bg">
-        <div class="orb orb-1"></div>
-        <div class="orb orb-2"></div>
-        <div class="orb orb-3"></div>
-    </div>
+    <!-- Floating Particles -->
+    <div id="particles"></div>
 
-    <!-- Grid Overlay -->
-    <div class="grid-overlay"></div>
-
-    <!-- Main Container -->
-    <div class="container">
-        <!-- Header -->
-        <div class="header" id="mainHeader">
-            <div class="logo">
-                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo-link">
+                <svg class="logo-svg" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
                     <defs>
                         <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                            <stop offset="0%" style="stop-color:#00f0ff"/>
-                            <stop offset="100%" style="stop-color:#ff00d4"/>
+                            <stop offset="0%" style="stop-color:#FF5E00;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#00B2FF;stop-opacity:1" />
                         </linearGradient>
                     </defs>
-                    <polygon points="50,5 95,30 95,70 50,95 5,70 5,30" fill="none" stroke="url(#logoGradient)" stroke-width="2"/>
-                    <polygon points="50,20 80,37 80,63 50,80 20,63 20,37" fill="none" stroke="url(#logoGradient)" stroke-width="1.5" opacity="0.6"/>
-                    <circle cx="50" cy="50" r="12" fill="url(#logoGradient)" opacity="0.3"/>
-                    <circle cx="50" cy="50" r="6" fill="url(#logoGradient)"/>
+                    <polygon points="20,2 38,14 38,26 20,38 2,26 2,14" fill="none" stroke="url(#logoGradient)" stroke-width="2"/>
+                    <polygon points="20,8 32,16 32,24 20,32 8,24 8,16" fill="url(#logoGradient)" opacity="0.3"/>
+                    <circle cx="20" cy="20" r="3" fill="url(#logoGradient)"/>
                 </svg>
-            </div>
-            <h1 class="brand-name">DATAVERSE</h1>
-            <p class="tagline">TECHNOLOGIES</p>
-            <br>
-            <p class="tagline">Digital Excellence • AI • Hardware • Reality</p>
-        </div>
-
-        <!-- Menu Grid -->
-        <div class="menu-grid" id="menuGrid">
-            <div class="menu-item initial-load" data-section="introduction">
-                <div class="menu-badge">IN</div>
-                <div class="menu-title">Cine suntem</div>
-            </div>
-            <div class="menu-item initial-load" data-section="services">
-                <div class="menu-badge">SV</div>
-                <div class="menu-title">Servicii</div>
-            </div>
-            <div class="menu-item initial-load" data-section="contact">
-                <div class="menu-badge">CT</div>
-                <div class="menu-title">Contact</div>
+                <span class="logo-text">DATAVERSE</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="nav-link">Acasă</a></li>
+                <li><a href="#features" class="nav-link">Servicii</a></li>
+                <li><a href="#about" class="nav-link">Cine suntem</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </div>
+    </nav>
 
-        <!-- Content Sections -->
-        <div id="contentArea">
-            <!-- Introduction Section -->
-            <div class="content-section" id="introduction">
-                <div class="section-header-small">
-                    <div class="small-logo">
-                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                            <defs>
-                                <linearGradient id="smallLogoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                                    <stop offset="0%" style="stop-color:#00f0ff"/>
-                                    <stop offset="100%" style="stop-color:#ff00d4"/>
-                                </linearGradient>
-                            </defs>
-                            <polygon points="50,10 85,32 85,68 50,90 15,68 15,32" fill="none" stroke="url(#smallLogoGrad)" stroke-width="3"/>
-                            <circle cx="50" cy="50" r="10" fill="url(#smallLogoGrad)"/>
-                        </svg>
-                    </div>
-                    <div class="small-brand">
-                        <h3>DATAVERSE</h3>
-                        <p>TECHNOLOGIES</p>
-                    </div>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="text-rotator">
+                <div class="text-set active">
+                    <h1 class="glitch-text" data-text="DATAVERSE TECHNOLOGIES">DATAVERSE TECHNOLOGIES</h1>
+                    <p class="subtitle">Digital • AI • Integrare Hardware • Networking — inginerie de nouă generație</p>
                 </div>
-                <button class="back-btn" onclick="backToMenu()">← Back to Menu</button>
-
-                <!-- Hero Banner -->
-                <div class="intro-hero">
-                    <div class="intro-hero-content">
-                        <span class="intro-badge">10+ ani experiență</span>
-                        <h1 class="intro-headline">Construim Sisteme<br><span>Inteligente</span> pentru Viitor</h1>
-                        <p class="intro-subtext">
-                            DATAVERSE Technologies este un integrator și dezvoltator software end-to-end: de la consultanță IT gratuită,
-                            la arhitectură, dezvoltare, automatizare, integrare hardware & software și mentenanță.
-                        </p>
-                        <p class="intro-subtext">
-                            Livrăm soluții enterprise și proiecte europene, cu un focus clar pe performanță, securitate și scalare —
-                            într-un limbaj tehnologic modern, orientat spre AI și integrare cu lumea fizică.
-                        </p>
-                        <div class="intro-cta-group">
-                            <button class="intro-cta-primary">Vezi Serviciile</button>
-                            <button class="intro-cta-secondary">Discută cu Noi</button>
-                        </div>
-                    </div>
-                    <div class="intro-hero-visual">
-                        <div class="intro-floating-card card-1">
-                            <span class="card-icon">⚡</span>
-                            <span class="card-text">Performanță</span>
-                        </div>
-                        <div class="intro-floating-card card-2">
-                            <span class="card-icon">🧠</span>
-                            <span class="card-text">AI Ready</span>
-                        </div>
-                        <div class="intro-floating-card card-3">
-                            <span class="card-icon">🔒</span>
-                            <span class="card-text">Secure by Design</span>
-                        </div>
-                        <div class="intro-orb"></div>
-                    </div>
+                <div class="text-set">
+                    <h1 class="glitch-text" data-text="SOFTWARE + REAL WORLD">SOFTWARE + REAL WORLD</h1>
+                    <p class="subtitle">Platforme scalabile, automatizări și integrări cu dispozitive, circuite & sisteme</p>
                 </div>
-
-                <!-- Metrics Strip -->
-                <div class="intro-metrics">
-                    <div class="metric-item">
-                        <span class="metric-value" data-target="10">0</span>
-                        <span class="metric-suffix">+</span>
-                        <span class="metric-label">Ani de Experiență</span>
-                    </div>
-                    <div class="metric-divider"></div>
-                    <div class="metric-item">
-                        <span class="metric-value" data-target="100">0</span>
-                        <span class="metric-suffix">%</span>
-                        <span class="metric-label">Proiecte Livrate cu Succes</span>
-                    </div>
-                    <div class="metric-divider"></div>
-                    <div class="metric-item">
-                        <span class="metric-value">EU</span>
-                        <span class="metric-label">Proiecte Europene Active</span>
-                    </div>
-                    <div class="metric-divider"></div>
-                    <div class="metric-item">
-                        <span class="metric-value">24/7</span>
-                        <span class="metric-label">Suport & Consultanță IT</span>
-                    </div>
+                <div class="text-set">
+                    <h1 class="glitch-text" data-text="CONSULTANTA IT GRATUITA">CONSULTANTA IT GRATUITA</h1>
+                    <p class="subtitle">Strategie clară, arhitectură solidă și execuție enterprise — fără compromisuri</p>
                 </div>
+            </div>
+        </div>
+        <div class="cta-container">
+            <a href="#features" class="cta-button cta-primary">Vezi Serviciile</a>
+            <a href="#contact" class="cta-button cta-secondary">Cere Consultanță</a>
+        </div>
+    </section>
 
-                <!-- Cine suntem / Ce facem (01..12) -->
-                <div class="intro-values">
-                    <div class="value-card">
-                        <div class="value-number">01</div>
-                        <h3>Consultanță IT Gratuită</h3>
-                        <p>Analizăm obiectivele tale, definim arhitectura optimă și trasăm un plan clar de execuție. Recomandări aplicabile, orientate pe rezultat și scalare.</p>
-                    </div>
-
-                    <div class="value-card">
-                        <div class="value-number">02</div>
-                        <h3>Dezvoltare Software Custom</h3>
-                        <p>Platforme web, aplicații enterprise și soluții cloud. Construim produse stabile, modulare și securizate — de la MVP la sisteme critice.</p>
-                    </div>
-
-                    <div class="value-card">
-                        <div class="value-number">03</div>
-                        <h3>Automatizare Procese</h3>
-                        <p>Transformăm fluxurile manuale în execuție automată: integrări, orchestration, pipeline-uri și optimizare operațională pentru eficiență maximă.</p>
-                    </div>
-
-                    <div class="value-card">
-                        <div class="value-number">04</div>
-                        <h3>Integrare Sisteme & API</h3>
-                        <p>Conectăm aplicații, servicii și sisteme legacy prin API, middleware și integrare de date. Interoperabilitate, monitorizare și reziliență.</p>
-                    </div>
-
-                    <div class="value-card">
-                        <div class="value-number">05</div>
-                        <h3>AI & Data Intelligence</h3>
-                        <p>Implementăm machine learning, modele predictive, clasificare și automatizări inteligente. Datele devin semnal, iar semnalul devine decizie.</p>
-                    </div>
-
-                    <div class="value-card">
-                        <div class="value-number">06</div>
-                        <h3>Networking & Infrastructură</h3>
-                        <p>Proiectăm și integrăm rețele performante: segmentare, management, redundanță și optimizare. Fundament solid pentru operațiuni fără întreruperi.</p>
-                    </div>
-
-                    <div class="value-card">
-                        <div class="value-number">07</div>
-                        <h3>Securitate & Sisteme de Protecție</h3>
-                        <p>Integrare sisteme de securitate (control acces, monitorizare, audit), hardening și best practices. Secure by design, end-to-end.</p>
-                    </div>
-
-                    <div class="value-card">
-                        <div class="value-number">08</div>
-                        <h3>Hardware, IoT & Embedded</h3>
-                        <p>Integrăm dispozitive, senzori, controlere și soluții embedded. Software-ul comunică cu lumea fizică: telemetrie, control, automatizare.</p>
-                    </div>
-
-                    <div class="value-card">
-                        <div class="value-number">09</div>
-                        <h3>Circuite & Soluții Fizice Custom</h3>
-                        <p>Dezvoltăm integrări hardware personalizate: prototipare, interfețare cu dispozitive, implementări pentru produse tehnice și sisteme inteligente.</p>
-                    </div>
-
-                    <div class="value-card">
-                        <div class="value-number">10</div>
-                        <h3>Proiectare 2D/3D & Imprimare 3D</h3>
-                        <p>Modelare CAD 2D/3D pentru componente și produse, prototipare rapidă și imprimare 3D pentru piese custom și validare accelerată.</p>
-                    </div>
-
-                    <div class="value-card">
-                        <div class="value-number">11</div>
-                        <h3>Realitate Virtuală (VR) & Simulări</h3>
-                        <p>Construim medii VR pentru training, demo, vizualizare și simulare. Experiențe imersive integrate cu date și aplicații reale.</p>
-                    </div>
-
-                    <div class="value-card">
-                        <div class="value-number">12</div>
-                        <h3>Suport pentru Orice Idee</h3>
-                        <p>Ai o idee software sau un produs fizic? Te susținem de la concept la lansare: analiză, roadmap, prototip, implementare, testare și scalare.</p>
-                    </div>
+    <!-- Features Section with Tabs -->
+    <section class="features" id="features">
+        <h2 class="section-title">Servicii & Capabilități</h2>
+        <div class="features-container">
+            <div class="feature-tabs">
+                <div class="tab-item active" data-tab="performance">
+                    <span class="tab-icon">⚡</span>
+                    <span>Dezvoltare</span>
                 </div>
-
-                <!-- Tech Stack Preview -->
-                <div class="intro-tech">
-                    <p class="tech-label">Tehnologii & Domenii</p>
-                    <div class="tech-marquee">
-                        <div class="tech-track">
-                            <span class="tech-item">AI / ML</span>
-                            <span class="tech-item">Cloud</span>
-                            <span class="tech-item">Microservicii</span>
-                            <span class="tech-item">API Integrations</span>
-                            <span class="tech-item">IoT / Embedded</span>
-                            <span class="tech-item">Cybersecurity</span>
-                            <span class="tech-item">Networking</span>
-                            <span class="tech-item">CAD 2D/3D</span>
-                            <span class="tech-item">3D Printing</span>
-                            <span class="tech-item">VR</span>
-
-                            <span class="tech-item">AI / ML</span>
-                            <span class="tech-item">Cloud</span>
-                            <span class="tech-item">Microservicii</span>
-                            <span class="tech-item">API Integrations</span>
-                            <span class="tech-item">IoT / Embedded</span>
-                        </div>
-                    </div>
+                <div class="tab-item" data-tab="security">
+                    <span class="tab-icon">🧠</span>
+                    <span>AI & Automatizare</span>
+                </div>
+                <div class="tab-item" data-tab="network">
+                    <span class="tab-icon">🌐</span>
+                    <span>Networking & IT</span>
+                </div>
+                <div class="tab-item" data-tab="analytics">
+                    <span class="tab-icon">🔗</span>
+                    <span>Integrare</span>
+                </div>
+                <div class="tab-item" data-tab="integration">
+                    <span class="tab-icon">🧩</span>
+                    <span>Hardware • 3D • VR</span>
                 </div>
             </div>
 
-            <!-- Services Section -->
-            <div class="content-section" id="services">
-                <div class="section-header-small">
-                    <div class="small-logo">
-                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                            <defs>
-                                <linearGradient id="smallLogoGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
-                                    <stop offset="0%" style="stop-color:#00f0ff"/>
-                                    <stop offset="100%" style="stop-color:#ff00d4"/>
-                                </linearGradient>
-                            </defs>
-                            <polygon points="50,10 85,32 85,68 50,90 15,68 15,32" fill="none" stroke="url(#smallLogoGrad2)" stroke-width="3"/>
-                            <circle cx="50" cy="50" r="10" fill="url(#smallLogoGrad2)"/>
-                        </svg>
-                    </div>
-                    <div class="small-brand">
-                        <h3>DATAVERSE</h3>
-                        <p>TECHNOLOGIES</p>
-                    </div>
-                </div>
-                <button class="back-btn" onclick="backToMenu()">← Back to Menu</button>
-
-                <div class="section-header">
-                    <h2 class="section-title">Serviciile Noastre</h2>
-                    <p class="section-subtitle">
-                        Soluții complete: software, AI, infrastructură IT, networking, securitate, 3D, VR și sisteme fizice
+            <div class="feature-content">
+                <!-- Development -->
+                <div class="content-panel active" id="performance">
+                    <h3>Dezvoltare Software Custom</h3>
+                    <p>
+                        Construim platforme software robuste, securizate și scalabile — de la MVP la sisteme enterprise.
+                        Abordare end-to-end: arhitectură, implementare, testare, lansare și mentenanță.
                     </p>
+                    <ul class="feature-list">
+                        <li>Platforme web & aplicații enterprise</li>
+                        <li>Arhitecturi moderne, scalare & performanță</li>
+                        <li>Securitate by design & standarde solide</li>
+                        <li>Suport pentru orice idee software (de la concept la produs)</li>
+                    </ul>
                 </div>
 
-                <div class="tabs-container">
-                    <div class="tab-buttons">
-                        <button class="tab-btn active" onclick="switchTab(this, 'development')">Dezvoltare</button>
-                        <button class="tab-btn" onclick="switchTab(this, 'design')">AI • 3D • VR</button>
-                        <button class="tab-btn" onclick="switchTab(this, 'consulting')">Integrare & Networking</button>
-                        <button class="tab-btn" onclick="switchTab(this, 'support')">Consultanță & Suport</button>
-                    </div>
-
-                    <div class="tab-content">
-                        <!-- Dezvoltare -->
-                        <div class="tab-pane active" id="development">
-                            <div class="services-list">
-                                <div class="service-row">
-                                    <div class="service-row-icon">
-                                        <img src="images/ai-optimized-templates.jpg" alt="Platforme Web & Enterprise">
-                                    </div>
-                                    <div class="service-row-content">
-                                        <h4>Platforme Web & Enterprise</h4>
-                                        <p>Dezvoltăm aplicații web și sisteme enterprise scalabile: arhitectură modernă, cloud, securitate și performanță. De la MVP la produse critice de business.</p>
-                                    </div>
-                                    <div class="service-row-arrow">→</div>
-                                </div>
-
-                                <div class="service-row">
-                                    <div class="service-row-icon">
-                                        <img src="images/coding-screen.jpg" alt="Aplicații Mobile">
-                                    </div>
-                                    <div class="service-row-content">
-                                        <h4>Aplicații Mobile & Cross-Platform</h4>
-                                        <p>Aplicații iOS/Android native sau cross-platform, cu UX rapid și integrare completă cu backend, autentificare, notificări, plăți și analytics.</p>
-                                    </div>
-                                    <div class="service-row-arrow">→</div>
-                                </div>
-
-                                <div class="service-row">
-                                    <div class="service-row-icon">
-                                        <img src="images/ai-mobile-app.jpg" alt="Dezvoltare Custom">
-                                    </div>
-                                    <div class="service-row-content">
-                                        <h4>Dezvoltare Custom pentru Orice Idee</h4>
-                                        <p>Transformăm idei în produse: analiză, arhitectură, prototip, implementare, testare, lansare și scalare. Clar, rapid, profesionist.</p>
-                                    </div>
-                                    <div class="service-row-arrow">→</div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- AI • 3D • VR -->
-                        <div class="tab-pane" id="design">
-                            <div class="services-list">
-                                <div class="service-row">
-                                    <div class="service-row-icon">
-                                        <img src="images/design-screen.jpg" alt="AI & Automatizări">
-                                    </div>
-                                    <div class="service-row-content">
-                                        <h4>AI & Automatizări Inteligente</h4>
-                                        <p>Implementăm soluții AI (ML, predicție, clasificare, asistenți) integrate în procese reale pentru eficiență, control și decizii automatizate.</p>
-                                    </div>
-                                    <div class="service-row-arrow">→</div>
-                                </div>
-
-                                <div class="service-row">
-                                    <div class="service-row-icon">
-                                        <img src="images/brand-identity.jpg" alt="Proiectare 2D/3D & Imprimare 3D">
-                                    </div>
-                                    <div class="service-row-content">
-                                        <h4>Proiectare 2D/3D & Imprimare 3D</h4>
-                                        <p>Modelare CAD 2D/3D, prototipuri funcționale și imprimare 3D pentru piese custom. Iterație rapidă și validare tehnică accelerată.</p>
-                                    </div>
-                                    <div class="service-row-arrow">→</div>
-                                </div>
-
-                                <div class="service-row">
-                                    <div class="service-row-icon">
-                                        <img src="images/motion-design.jpg" alt="Realitate Virtuală (VR)">
-                                    </div>
-                                    <div class="service-row-content">
-                                        <h4>Realitate Virtuală (VR) & Simulări</h4>
-                                        <p>Dezvoltăm experiențe VR pentru training, demo și simulare. Vizualizare imersivă, interacțiuni realiste și integrare cu date din sisteme.</p>
-                                    </div>
-                                    <div class="service-row-arrow">→</div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Integrare & Networking -->
-                        <div class="tab-pane" id="consulting">
-                            <div class="services-list">
-                                <div class="service-row">
-                                    <div class="service-row-icon">
-                                        <img src="images/digital-strategy.jpg" alt="Integrare Sisteme & API">
-                                    </div>
-                                    <div class="service-row-content">
-                                        <h4>Integrare Sisteme & API Orchestration</h4>
-                                        <p>Conectăm aplicații și sisteme (ERP/CRM/legacy) prin integrare API, middleware și pipelines. Stabilitate, observabilitate și extensibilitate.</p>
-                                    </div>
-                                    <div class="service-row-arrow">→</div>
-                                </div>
-
-                                <div class="service-row">
-                                    <div class="service-row-icon">
-                                        <img src="images/tech-audit.jpg" alt="Networking & Securitate">
-                                    </div>
-                                    <div class="service-row-content">
-                                        <h4>Networking, Securitate & Infrastructură</h4>
-                                        <p>Proiectăm și integrăm rețele și sisteme de securitate: segmentare, control acces, monitorizare și hardening pentru medii moderne.</p>
-                                    </div>
-                                    <div class="service-row-arrow">→</div>
-                                </div>
-
-                                <div class="service-row">
-                                    <div class="service-row-icon">
-                                        <img src="images/process-optimized.jpg" alt="IoT, Embedded & Hardware">
-                                    </div>
-                                    <div class="service-row-content">
-                                        <h4>IoT, Embedded & Integrare Hardware</h4>
-                                        <p>Integram dispozitive, senzori și controlere cu aplicații software: telemetrie, control, automatizare și soluții custom (inclusiv circuite).</p>
-                                    </div>
-                                    <div class="service-row-arrow">→</div>
-                                </div>
-
-                                <!-- ADĂUGAT: Montaj Sisteme IT -->
-                                <div class="service-row">
-                                    <div class="service-row-icon">
-                                        <img src="images/network-installation.jpg" alt="Montaj Sisteme IT">
-                                    </div>
-                                    <div class="service-row-content">
-                                        <h4>Montaj & Configurare Sisteme IT</h4>
-                                        <p>Instalăm, configurăm și optimizăm infrastructuri IT complete: rețele cablate și wireless, routere, switch-uri, calculatoare, servere, conexiuni internet, sisteme de supraveghere video și soluții de securitate. Totul integrat, testat și pregătit pentru utilizare reală.</p>
-                                    </div>
-                                    <div class="service-row-arrow">→</div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Consultanță & Suport -->
-                        <div class="tab-pane" id="support">
-                            <div class="services-list">
-                                <div class="service-row">
-                                    <div class="service-row-icon">
-                                        <img src="images/247-support.jpg" alt="Consultanță IT Gratuită">
-                                    </div>
-                                    <div class="service-row-content">
-                                        <h4>Consultanță IT Gratuită</h4>
-                                        <p>Consultanță profesionistă pentru orice domeniu IT: analiză, arhitectură, recomandări tehnice și strategie — fără costuri inițiale.</p>
-                                    </div>
-                                    <div class="service-row-arrow">→</div>
-                                </div>
-
-                                <div class="service-row">
-                                    <div class="service-row-icon">
-                                        <img src="images/training-center.jpg" alt="Suport & Mentenanță">
-                                    </div>
-                                    <div class="service-row-content">
-                                        <h4>Suport Tehnic & Mentenanță</h4>
-                                        <p>Monitorizare, optimizare, update-uri și intervenții rapide pentru aplicații și infrastructuri. Stabilitate operațională, fără compromis.</p>
-                                    </div>
-                                    <div class="service-row-arrow">→</div>
-                                </div>
-
-                                <div class="service-row">
-                                    <div class="service-row-icon">
-                                        <img src="images/managed-service.jpg" alt="R&D & Lansare">
-                                    </div>
-                                    <div class="service-row-content">
-                                        <h4>R&amp;D & Asistență pentru Lansare</h4>
-                                        <p>Sprijin complet pentru produse noi: roadmap, prototip, testare, lansare, scalare. Partener tehnologic pe termen lung.</p>
-                                    </div>
-                                    <div class="service-row-arrow">→</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Contact Section -->
-            <div class="content-section" id="contact">
-                <div class="section-header-small">
-                    <div class="small-logo">
-                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                            <defs>
-                                <linearGradient id="smallLogoGrad6" x1="0%" y1="0%" x2="100%" y2="100%">
-                                    <stop offset="0%" style="stop-color:#00f0ff"/>
-                                    <stop offset="100%" style="stop-color:#ff00d4"/>
-                                </linearGradient>
-                            </defs>
-                            <polygon points="50,10 85,32 85,68 50,90 15,68 15,32" fill="none" stroke="url(#smallLogoGrad6)" stroke-width="3"/>
-                            <circle cx="50" cy="50" r="10" fill="url(#smallLogoGrad6)"/>
-                        </svg>
-                    </div>
-                    <div class="small-brand">
-                        <h3>DATAVERSE</h3>
-                        <p>TECHNOLOGIES</p>
-                    </div>
-                </div>
-                <button class="back-btn" onclick="backToMenu()">← Back to Menu</button>
-
-                <div class="section-header">
-                    <h2 class="section-title">Contact</h2>
-                    <p class="section-subtitle">Hai să construim ceva avansat, împreună.</p>
+                <!-- AI & Automation -->
+                <div class="content-panel" id="security">
+                    <h3>AI & Automatizare Inteligentă</h3>
+                    <p>
+                        Implementăm AI aplicat (nu demo-uri): automatizare de procese, asistenți inteligenți, predicții,
+                        clasificare, recomandări și optimizare operațională — integrate în fluxuri reale.
+                    </p>
+                    <ul class="feature-list">
+                        <li>AI pentru business: predicție, clasificare, recomandări</li>
+                        <li>Automatizare procese & orchestrare workflow</li>
+                        <li>Integrare AI în aplicații existente</li>
+                        <li>Monitorizare, măsurare, îmbunătățire continuă</li>
+                        <li>Consultanță IT gratuită pentru roadmap AI realist</li>
+                    </ul>
                 </div>
 
-                <div class="contact-grid">
-                    <div class="contact-form">
-                        <div class="form-group">
-                            <input type="text" placeholder="Nume">
-                        </div>
-                        <div class="form-group">
-                            <input type="email" placeholder="Email">
-                        </div>
-                        <div class="form-group">
-                            <input type="text" placeholder="Subiect">
-                        </div>
-                        <div class="form-group">
-                            <textarea placeholder="Mesajul tău"></textarea>
-                        </div>
-                        <button class="submit-btn">Trimite</button>
-                    </div>
-                    <div class="contact-info">
-                        <div class="contact-item">
-                            <div class="contact-icon">📍</div>
-                            <div class="contact-details">
-                                <h4>Locație</h4>
-                                <p>România / Remote</p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <div class="contact-icon">📧</div>
-                            <div class="contact-details">
-                                <h4>Email</h4>
-                                <p>marinicadenisandrei@gmail.com</p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <div class="contact-icon">📞</div>
-                            <div class="contact-details">
-                                <h4>Telefon</h4>
-                                <p>+40722 889 760</p>
-                            </div>
-                        </div>
-                    </div>
+                <!-- Networking & IT Installations -->
+                <div class="content-panel" id="network">
+                    <h3>Networking, Securitate & Montaj Sisteme IT</h3>
+                    <p>
+                        Proiectăm, instalăm și integrăm infrastructură IT completă: rețele, internet, echipamente, securitate,
+                        supraveghere și soluții custom. Totul documentat, stabil și pregătit pentru extindere.
+                    </p>
+                    <ul class="feature-list">
+                        <li>Montaj rețele LAN/Wi-Fi, routere, switch-uri, internet</li>
+                        <li>Configurare PC-uri, servere, infrastructură & management</li>
+                        <li>Integrare sisteme de supraveghere, securitate & acces</li>
+                        <li>Segmentare rețea, redundanță, optimizare & uptime</li>
+                        <li>Integrare cu soluții custom (hardware/software)</li>
+                    </ul>
+                </div>
+
+                <!-- Integration -->
+                <div class="content-panel" id="analytics">
+                    <h3>Integrare Sisteme & Automatizare de Fluxuri</h3>
+                    <p>
+                        Conectăm sisteme diverse (ERP/CRM/legacy) prin API, middleware și integrări de date stabile.
+                        Construim pipeline-uri reziliente, observabile și ușor de extins.
+                    </p>
+                    <ul class="feature-list">
+                        <li>Integrare API (REST/Webhooks/WebSockets)</li>
+                        <li>Sincronizare de date & migrare controlată</li>
+                        <li>Integrare ERP/CRM/legacy & sisteme interne</li>
+                        <li>Automatizare end-to-end a proceselor între sisteme</li>
+                        <li>Observabilitate: logging, monitoring, alerte</li>
+                    </ul>
+                </div>
+
+                <!-- Hardware / 3D / VR -->
+                <div class="content-panel" id="integration">
+                    <h3>Hardware, IoT, Circuite • Proiectare 2D/3D • Imprimare 3D • VR</h3>
+                    <p>
+                        Conectăm software-ul cu lumea reală: dispozitive, senzori, controllere și circuite custom.
+                        Proiectăm și prototipăm (2D/3D + print 3D) și livrăm experiențe VR pentru training, simulare și demo.
+                    </p>
+                    <ul class="feature-list">
+                        <li>Integrare IoT/embedded: senzori, dispozitive, telemetrie</li>
+                        <li>Circuite & integrare hardware custom (prototipare)</li>
+                        <li>Proiectare 2D/3D (CAD) pentru componente și sisteme</li>
+                        <li>Imprimare 3D pentru prototipuri & piese custom</li>
+                        <li>Realitate virtuală (VR) pentru simulare, training, prezentare</li>
+                    </ul>
                 </div>
             </div>
         </div>
+    </section>
 
-        <!-- Footer -->
-        <footer class="footer" id="mainFooter">
-            <p>© 2026 DATAVERSE Technologies. Built for tomorrow.</p>
-        </footer>
-    </div>
+    <!-- About Section -->
+    <section class="about" id="about">
+        <h2 class="section-title">Cine suntem</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <h2>Inginerie Futuristă. Execuție Enterprise.</h2>
+                <p>
+                    <strong>DATAVERSE Technologies</strong> este un partener tehnologic end-to-end în dezvoltare software și integrare,
+                    specializat în automatizare, AI și conectarea sistemelor digitale cu infrastructura fizică.
+                </p>
+                <p>
+                    Avem o experiență solidă de <strong>peste 10 ani</strong> în dezvoltare și integrare, livrăm sisteme
+                    scalabile pentru medii enterprise și lucrăm inclusiv la <strong>proiecte europene</strong>.
+                </p>
+                <p>
+                    Oferim <strong>consultanță IT gratuită</strong> pentru orice domeniu de IT: analiză, arhitectură, roadmap,
+                    estimări și design tehnic — ca să pornești corect și să construiești durabil.
+                </p>
+            </div>
+            <div class="about-visual">
+                <div class="about-graphic"></div>
+            </div>
+        </div>
 
-    <script src="templatemo-nexa-scripts.js"></script>
+        <!-- Second row with reversed layout -->
+        <div class="about-content" style="margin-top: 80px;">
+            <div class="about-visual">
+                <div class="about-graphic-alt">
+                    <div class="hexagon"></div>
+                    <div class="hexagon"></div>
+                    <div class="hexagon"></div>
+                </div>
+            </div>
+            <div class="about-text">
+                <h2>De la idee la platformă. De la software la soluții fizice.</h2>
+                <p>
+                    Susținem echipe și antreprenori care vor să dezvolte o platformă software sau un produs hibrid (software + hardware).
+                    Proiectăm arhitecturi robuste, implementăm rapid și sigur și integrăm sisteme terțe: securitate, networking, dispozitive,
+                    automatizări și fluxuri de date.
+                </p>
+                <p>
+                    Livrăm cu disciplină: analiză → implementare → integrare → testare → lansare → mentenanță.
+                    Focus pe performanță, securitate, scalare și control.
+                </p>
+                <p>
+                    Dacă vrei un partener care poate livra atât partea digitală, cât și integrarea cu lumea reală (IoT, circuite, 3D, VR),
+                    ești în locul potrivit.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact-container">
+            <div class="contact-form">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Nume</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subiect</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mesaj</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Trimite Mesaj</button>
+                </form>
+            </div>
+            <div class="contact-info">
+                <h3>Inițiază Conexiunea</h3>
+                <div class="info-item">
+                    <div class="info-icon">🧭</div>
+                    <div class="info-details">
+                        <h4>Consultanță IT</h4>
+                        <p>Gratuită • Strategie • Arhitectură • Roadmap</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <div class="info-icon">📧</div>
+                    <div class="info-details">
+                        <h4>Email</h4>
+                        <p>marinicadenisandrei@gmail.com</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <div class="info-icon">📱</div>
+                    <div class="info-details">
+                        <h4>Telefon</h4>
+                        <p>+40 722 889 760</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <div class="info-icon">📍</div>
+                    <div class="info-details">
+                        <h4>Locație</h4>
+                        <p>România • Remote / EU</p>
+                    </div>
+                </div>
+                <div class="map-container">
+                    <div class="map-placeholder">
+                        <p>Arie de Acoperire</p>
+                        <p style="font-size: 0.9rem; margin-top: 10px;">România • Remote / EU</p>
+                    </div>
+                    <div class="map-overlay"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="#features">Servicii</a>
+                <a href="#about">Cine suntem</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <p class="copyright">
+                © 2026 DATAVERSE Technologies. All rights reserved. 
+                <!-- | Design: <a href="https://templatemo.com" target="_blank" rel="nofollow noopener">TemplateMo</a> -->
+            </p>
+        </div>
+    </footer>
+<script src="templatemo-electric-scripts.js"></script>
 </body>
 </html>
